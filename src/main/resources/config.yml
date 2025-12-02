@@ -1,0 +1,65 @@
+# config.yml
+# BigBrother Configuration
+
+# Global settings
+global_toggle: true
+enabled_by_default: true
+
+# Spy settings
+spy:
+  command:
+    enabled: true
+    notification: "&7[&eCommandSpy&7] &f{player} &7{action}"
+    permission: "bigbrother.commandspy.toggle"
+
+  sign:
+    enabled: true
+    notification: "&7[&aSignSpy&7] &f{player} &7{action}"
+    permission: "bigbrother.signspy.toggle"
+
+  anvil:
+    enabled: true
+    notification: "&7[&6AnvilSpy&7] &f{player} &7{action}"
+    permission: "bigbrother.anvilspy.toggle"
+
+  book:
+    enabled: true
+    notification: "&7[&dBookSpy&7] &f{player} &7{action}"
+    permission: "bigbrother.bookspy.toggle"
+
+  portal:
+    enabled: true
+    notification: "&7[&5PortalSpy&7] &f{player} &7{action}"
+    permission: "bigbrother.portalspy.toggle"
+
+# Filter Settings
+filters:
+  excluded_commands:
+    - "msg"
+    - "w"
+    - "tell"
+    - "whisper"
+    - "me"
+    - "say"
+    - "help"
+    - "?"
+  excluded_players: [ ]
+  excluded_worlds:
+    - "world_nether"
+    - "world_the_end"
+
+# Messages
+messages:
+  no_permission: "&cYou don't have permission to use this feature!"
+  player_not_found: "&cPlayer not found!"
+  reloaded: "&aConfiguration reloaded!"
+  usage: |
+    &eBigBrother Commands:
+    &7/bigbrother &8- &fToggle all spy features
+    &7/bigbrother reload &8- &fReload configuration
+    &7/bigbrother status &8- &fCheck your spy status
+    &7/bigbrother commands [player] &8- &fToggle command spy
+    &7/bigbrother signs [player] &8- &fToggle sign spy
+    &7/bigbrother anvils [player] &8- &fToggle anvil spy
+    &7/bigbrother books [player] &8- &fToggle book spy
+    &7/bigbrother portals [player] &8- &fToggle portal spy
