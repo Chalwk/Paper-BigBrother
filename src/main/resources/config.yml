@@ -1,6 +1,3 @@
-# config.yml
-# BigBrother Configuration
-
 # Global settings
 global_toggle: true
 enabled_by_default: true
